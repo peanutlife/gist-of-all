@@ -1,10 +1,12 @@
+from dotenv import load_dotenv
 import openai
 import logging
 
-#openai.api_key = "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" 
-openai.api_key = "***REMOVED***"
+load_dotenv()  # Load environment variables from .env file
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 logging.basicConfig(level=logging.INFO)
+
 
 
 def summarize_text(content, keywords):
