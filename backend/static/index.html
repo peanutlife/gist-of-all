@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gist Summarizer</title>
+</head>
+<body>
+    <h1>Gist Summarizer</h1>
+    <form id="summarize-form">
+        <label for="url">URL:</label><br>
+        <input type="text" id="url" name="url" placeholder="Enter blog or news URL" required><br><br>
+        <label for="keywords">Keywords:</label><br>
+        <input type="text" id="keywords" name="keywords" placeholder="Enter keywords (comma-separated)" required><br><br>
+        <button type="submit">Summarize</button>
+    </form>
+    <h2>Summary:</h2>
+    <p id="summary-result"></p>
+    <script src="app.js"></script>
+</body>
+</html>

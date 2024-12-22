@@ -1,0 +1,8 @@
+flask
+flask-restful
+flask-limiter
+flask-mail
+beautifulsoup4
+requests
+openai
+
